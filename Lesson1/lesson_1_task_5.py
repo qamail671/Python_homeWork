@@ -1,7 +1,6 @@
-
 def numbers(num):
+    print(num, end='')
 
-    print(num, end ='')
 
 numbers('8')
 
