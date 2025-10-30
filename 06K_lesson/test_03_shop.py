@@ -32,7 +32,6 @@ def test_pay_form():
     driver.find_element(By.CSS_SELECTOR, 'div[data-test="total-label"]')
 
     total = driver.find_element(By.CSS_SELECTOR, 'div[data-test="total-label"]')
-
-    print(total)
+    assert "$58.29" in total.text, f"Ожидался результат '$58.29', но получили {total.text}"
 
     driver.quit()
